@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco HardCurrency</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="person.html">Persona</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cambio_moneda.html">Cambio de Moneda</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="atencion_usuario.html">Atención Cliente</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="datos_almacenar.html">Mostrar Datos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="datos_guardar.html">Guardar Datos</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row no-gutters">
+        <div class="col">
+            <div class="cc-header">
+                <div class="cc-logo">
+                    <div class="col">
+                        <img class="img_logo" src="./Imagenes/logo_HC.png"/>
+                    </div>
+                    <div class="col">
+                        Banco HardCurrency
+                    </div>
+                    <div class="col">
+                        Nit: 8958756584-5
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-left: 10px;">
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h2 class="cc-title-color2 d-flex justify-content-center">Peticiones, Quejas, reclamos, solicitudes y Felicitaciones</h2>
+                <p class="cc-paragram-color7">Porque usted es nuestra razón de ser, estamos atentos a escucharlo 
+                    y a resolver sus inquietudes, necesidades, requerimientos, quejas o reclamos.</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="cc-paragram-color4">¿Qué es un requerimiento?</h4>
+                <p class="">Es una solicitud con alguno de los siguientes propósitos:</p>
+                <ol>
+                    <li>
+                        Llevar a cabo un trámite propio de las características de un producto o servicio.
+                    </li>
+                    <li>
+                        Aclarar la información comercial de productos o servicios.  
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-8">
+                <h4 class="cc-paragram-color4">¿En qué consisten las quejas y reclamos?</h4>
+                <p>Son inconformidades relacionadas con un producto o servicio adquirido en la Entidad o 
+                    una inconformidad en la atención recibida por parte de un colaborador del Banco. 
+                </p>
+                <h4 class="cc-paragram-color4">Proceso de atención de reclamos y requerimientos</h4>
+                <p>En caso que necesite radicar un requerimiento, queja o reclamo, el Banco HardCurrency 
+                    pone a su disposición las siguientes opciones para que elija la que más se ajuste a su 
+                    necesidad. Nos esforzamos por brindarle solución inmediata  y si no es posible le 
+                    informaremos el tiempo que tomará el análisis y entrega de respuesta a su solicitud.</p>
+                <ul>
+                    <li>
+                        Línea Amiga: sin desplazarse de su vivienda o lugar de trabajo, puede radicar su 
+                        reclamo o requerimiento por vía telefónica en nuestra línea de audio, 307 7060 
+                        en Bogotá y desde otras ciudades en la línea nacional gratuita 01 8000 910 038.
+                    </li>
+                    <li>
+                        Tambien por via internet llenado el formulario, que se encuentra debajo. 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="cc-title-color2 d-flex justify-content-center">Buzon de Quejas, peticiones, reclamos y solicitudes</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Tipo de Petición*:</p>
+                <select style="width: 100%;" Class="cc-buscador-input" name="tipo_peticion">
+                    <option value="cc-ciudad-general">Seleccionar</option>
+                    <option value="cc-ciudad-general">Petición</option>
+                    <option value="cc-ciudad-principal">Quejas</option>
+                    <option value="cc-ciudad-SedeMedellin">Reclamos</option>
+                    <option value="cc-ciudad-SedeCartagena">Solicitudes</option>
+                    <option value="cc-ciudad-SedeCali">Felicitación</option>
+                </select>
+                <p>Tipo de Documento*:</p>
+                <select style="width: 100%;" Class="cc-buscador-input" name="tipo_documento">
+                    <option value="cc-ciudad-general">Seleccionar</option>
+                    <option value="cc-ciudad-general">Cedula</option>
+                    <option value="cc-ciudad-principal">Nit</option>
+                    <option value="cc-ciudad-SedeMedellin">Cedula extranjera</option>
+                </select>
+                <p>Documento*:</p>
+                <input style="width: 100%;" type="text" name="documento"/>
+                <p>Nombre*:</p>
+                <input style="width: 100%;" type="text" name="documento"/>
+                <p>Telefono*:</p>
+                <input style="width: 100%;" type="text" name="documento"/>
+            </div>
+            <div class="col-md-4">
+                <p>Pais*:</p>
+                <select Class="cc-buscador-input" style="width: 100%;" name="pais">
+                    <option value="cc-ciudad-general">Seleccionar</option>
+                    <option value="cc-ciudad-general">Colombia</option>
+                    <option value="cc-ciudad-general">Ecuador</option>
+                </select>
+                <p>Departamento*:</p>
+                <input style="width: 100%;" type="text" name="departamento"/>
+                <p>Ciudad*:</p>
+                <input style="width: 100%;" type="text" name="ciudad"/>
+                <p>Correo*:</p>
+                <input style="width: 100%;" type="text" name="correo"/>
+                <p>Adjuntar Soporte*:</p>
+                <input type="file" name="archivo" value="archivo" size="80" />
+            </div>
+            <div class="col-md-4">
+                <p>Asuto*:</p>
+                <input style="width: 100%;" type="text" name="asunto"/>
+                <p>Descripción (1000 caracteres)*:</p>
+                <input style="width: 100%; height: 150px;" type="text" name="correo"/>
+            </div>
+        </div>
+        <div class="form-group mt-3" style="margin-left: 10px; margin-bottom: 20px; margin-top: 20px;">
+            <a href="#" class="btn btn-primary btn-lg w-100">
+                Enviar Formulario
+            </a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div id="cc-background-footer-1" class="col">
+                <div class="col-md-8 cc-paragram-title cc-paragram-color1">
+                    Banco HardCurrency de tu confianza
+                </div>
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-facebook"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-twitter"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-youtube"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-instagram"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-linkedin"></div></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div id="cc-background-footer-2" class="row no-gutters cc-container-perfil">
+        
+        <div class="col-md-6 d-flex justify-content-center">
+            <div>
+                <span class="cc-paragram-title">Información Corporativa</span>
+                <ul class="navbar-nav d-flex justify-content-center .cc-paragram-color1">
+                    <li class="nav-link .cc-paragram-color1">
+                        <a class="nav-link .cc-paragram-color1" href="acerca_nosotros.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_info_svg.svg"/>
+                            &nbsp Acerca de nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link .cc-paragram-color1" href="tasas_precios_comisiones.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_bank.svg"/>
+                            &nbsp Tasas, precios y comisiones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=".cc-paragram-color1" href="info_adicional.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_book.svg"/>
+                            &nbsp Información adicional
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <div>
+                <span class="cc-paragram-title">Información de Interés</span>
+                <ul class="navbar-nav d-flex justify-content-center .cc-paragram-color1">
+                    <li class=".cc-paragram-color2 nav-item">
+                        <a class="nav-link" href="info_legal.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_info_svg.svg"/>
+                            &nbsp Información legal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=".cc-paragram-color2 nav-link" href="superintendencia_financiera.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_bank.svg"/>
+                            &nbsp Superintendencia Financiera de Colombia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=".cc-paragram-color1" href="preguntas_frecuentes.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_book.svg"/>
+                            &nbsp Preguntas Frecuentes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div id="cc-background-footer-1" class="col-md-12">
+            <p class="cc-paragram-color1 col-md-8">
+                Copyright © 2018 Banco HardCurrency
+            </p>
+            <a href="tratamiento_dato.html" class="cc-paragram-color1 col-md-4">
+                Politica de Datos Personales
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

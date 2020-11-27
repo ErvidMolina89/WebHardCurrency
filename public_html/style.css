@@ -1,0 +1,607 @@
+.cc-header {
+  display: flex;
+  background-image: url("./Imagenes/cerdito_ahorro.png");
+  background-size: cover;
+}
+
+.cc-margin-text-list {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.cc-img-inicio-count {
+  display: flex;
+  background-image: url("./Imagenes/ahorro-moneda.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-inicio-count1 {
+  display: flex;
+  background-image: url("./Imagenes/inicio-cesantias.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-person-count {
+  display: flex;
+  background-image: url("./Imagenes/cuenta-bancaria.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-person-count1 {
+  display: flex;
+  background-image: url("./Imagenes/credito.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-person-count2 {
+  display: flex;
+  background-image: url("./Imagenes/vivienda.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-person-count3 {
+  display: flex;
+  background-image: url("./Imagenes/tarjeta-credito.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-person-count4 {
+  display: flex;
+  background-image: url("./Imagenes/invierta-nosotros.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-person-count5 {
+  display: flex;
+  background-image: url("./Imagenes/seguro.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-empresa-count {
+  display: flex;
+  background-image: url("./Imagenes/empresa-ahorro.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-empresa-count1 {
+  display: flex;
+  background-image: url("./Imagenes/empresa-transaccional.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-empresa-count2 {
+  display: flex;
+  background-image: url("./Imagenes/empresa-monedaE.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-empresa-count3 {
+  display: flex;
+  background-image: url("./Imagenes/empresa-fiduciarios.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-img-empresa-count4 {
+  display: flex;
+  background-image: url("./Imagenes/empresa-financiacion.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.cc-margin-atencion {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.cc-margin-text-atencion {
+  margin-top: 160px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #000a1285;
+  text-shadow: 1px 1px black;
+}
+
+.cc-background-person {
+  background-color: #000a1285;
+  text-shadow: 1px 1px black;
+  margin-top: 20px;
+}
+
+.cc-img-atencion-count {
+  background-image: url("./Imagenes/atencion-defensor.png");
+  background-size: cover;
+  margin: 20px;
+}
+
+.cc-img-atencion-count1 {
+  background-image: url("./Imagenes/atencion-derechos-deberes.png");
+  background-size: cover;
+  margin: 20px;
+}
+
+.cc-img-atencion-count2 {
+  background-image: url("./Imagenes/atencion-pqrs.png");
+  background-size: cover;
+  margin: 20px;
+}
+
+.cc-header .cc-logo {
+  margin: 30px;
+  height: 170px;
+  width: 240px;
+  background-color: #000a1285;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.img_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.cc-img-cuenta-ahorro {
+  display: flex;
+  background-image: url("./Imagenes/cuenta_ahorro.png");
+  background-size: cover;
+}
+
+.cc-img-mi-ahorro {
+  display: flex;
+  background-image: url("./Imagenes/mi-ahorro-credito.png");
+  background-size: cover;
+}
+
+.cc-img-mi-alcancia {
+  display: flex;
+  background-image: url("./Imagenes/mi_ahorro.png");
+  background-size: cover;
+}
+
+.cc-img-c-pensionado {
+  display: flex;
+  background-image: url("./Imagenes/mi-pensionado.png");
+  background-size: cover;
+}
+
+.cc-img-mi-casa {
+  display: flex;
+  background-image: url("./Imagenes/mi-ahorro-casa.png");
+  background-size: cover;
+}
+
+.cc-img-mi-kids {
+  display: flex;
+  background-image: url("./Imagenes/mi-kids.png");
+  background-size: cover;
+}
+
+.cc-img-c-corriente {
+  display: flex;
+  background-image: url("./Imagenes/c-corriente.png");
+  background-size: cover;
+}
+
+.cc-img-mi-jovenes {
+  display: flex;
+  background-image: url("./Imagenes/mi_jovenes.png");
+  background-size: cover;
+}
+
+.cc-img-credito-cartera {
+  display: flex;
+  background-image: url("./Imagenes/credito-cartera.png");
+  background-size: cover;
+}
+
+.cc-img-libre-inversion {
+  display: flex;
+  background-image: url("./Imagenes/libre-inversion.png");
+  background-size: cover;
+}
+
+.cc-img-c-rotativo {
+  display: flex;
+  background-image: url("./Imagenes/cre-rotativo.png");
+  background-size: cover;
+}
+
+.cc-img-credito-vivienda {
+  display: flex;
+  background-image: url("./Imagenes/cre-vivienda.png");
+  background-size: cover;
+}
+
+.cc-img-credito-hipotecario {
+  display: flex;
+  background-image: url("./Imagenes/cre-hipotecario.png");
+  background-size: cover;
+}
+
+.cc-img-credito-habitacional {
+  display: flex;
+  background-image: url("./Imagenes/cre-habitacional.png");
+  background-size: cover;
+}
+
+.cc-img-tarjeta-clasica {
+  display: flex;
+  background-image: url("./Imagenes/tarjeta_clasica.png");
+  background-size: cover;
+}
+
+.cc-img-tarjeta-platinum {
+  display: flex;
+  background-image: url("./Imagenes/tarjeta_platinum.png");
+  background-size: cover;
+}
+
+.cc-img-tarjeta-oro {
+  display: flex;
+  background-image: url("./Imagenes/tarjeta_oro.png");
+  background-size: cover;
+}
+
+.cc-img-cdt-variable {
+  display: flex;
+  background-image: url("./Imagenes/cdt_variable.png");
+  background-size: cover;
+}
+
+.cc-img-cdt-fija {
+  display: flex;
+  background-image: url("./Imagenes/cdt_fija.png");
+  background-size: cover;
+}
+
+.cc-img-dia-dia {
+  display: flex;
+  background-image: url("./Imagenes/dia_dia.png");
+  background-size: cover;
+}
+
+.cc-img-seguro-vivienda {
+  display: flex;
+  background-image: url("./Imagenes/seguro_vivienda.png");
+  background-size: cover;
+}
+
+.cc-img-seguro-creciente {
+  display: flex;
+  background-image: url("./Imagenes/seguro_creciente.png");
+  background-size: cover;
+}
+
+.cc-img-seguro-consumo {
+  display: flex;
+  background-image: url("./Imagenes/seguro_consumo.png");
+  background-size: cover;
+}
+
+.cc-img-seguro-exequial {
+  display: flex;
+  background-image: url("./Imagenes/seguro_exequial.png");
+  background-size: cover;
+}
+
+.cc-img-cdt-empresarial {
+  display: flex;
+  background-image: url("./Imagenes/cdt_empresarial.png");
+  background-size: cover;
+}
+
+.cc-img-dia-empresarial {
+  display: flex;
+  background-image: url("./Imagenes/dia_empresarial.png");
+  background-size: cover;
+}
+
+.cc-img-cuenta-ahorro-empresarial {
+  display: flex;
+  background-image: url("./Imagenes/cuenta_ahorro_empresarial.png");
+  background-size: cover;
+}
+
+.cc-img-carta_importacion {
+  display: flex;
+  background-image: url("./Imagenes/transaccional_carta_importacion.png");
+  background-size: cover;
+}
+
+.cc-img-cv_divisas {
+  display: flex;
+  background-image: url("./Imagenes/transaccional_cv_divisas.png");
+  background-size: cover;
+}
+
+.cc-img-fiduciario_rentafacil {
+  display: flex;
+  background-image: url("./Imagenes/fiduciario_rentafacil.png");
+  background-size: cover;
+}
+
+.cc-img-cartera_ordinaria_empresa {
+  display: flex;
+  background-image: url("./Imagenes/cartera_ordinaria_empresa.png");
+  background-size: cover;
+}
+
+.cc-img-tc_empresa {
+  display: flex;
+  background-image: url("./Imagenes/tc_empresa.png");
+  background-size: cover;
+}
+
+.cc-img-empresa_credito_tesoreria {
+  display: flex;
+  background-image: url("./Imagenes/empresa_credito_tesoreria.png");
+  background-size: cover;
+}
+
+.cc-img-acerca_nosotros {
+  display: flex;
+  background-image: url("./Imagenes/acerca_nosotros.png");
+  background-size: contain;
+}
+
+#img_icono_footer {
+  height: 18px;
+  width: 18px;
+}
+
+.cc-paragram-title {
+  text-align: justify;
+  font-style: italic;
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+}
+
+.cc-paragram-color1 {
+  color: white;
+  font-size: 17px;
+  text-shadow: 1px 1px black;
+}
+
+.cc-paragram-color2 {
+  color: rgb(192, 188, 188);
+  font-size: 17px;
+  text-shadow: 1px 1px black;
+}
+
+.cc-paragram-color3 {
+  color: #0b243bd0;
+  font-size: 18px;
+  text-shadow: 1px 1px rgb(28, 164, 206);
+}
+
+.cc-paragram-color4 {
+  color: #0b243bd0;
+  text-shadow: 1px 1px rgb(245, 240, 240);
+}
+
+.cajita-instrucciones {
+  border: 1px solid #ccc;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 1.2;
+  margin: .6rem 0;
+}
+
+.title-seccion {
+  border-bottom: 1px solid #020f36;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.title-seccion span {
+  color: #fff;
+  background-color: #020f36;
+  padding: 0 3%;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.cajita-instrucciones .item-inst:first-child {
+  background-color: #ecf3f6;
+  padding: 1rem .8rem;
+  margin: 0;
+}
+
+.cajita-instrucciones .item-inst {
+  margin: .5rem;
+  color: #020f36;
+}
+
+.cc-paragram-color5 {
+  color: #fdfdfdd0;
+  text-shadow: 1px 1px rgb(5, 9, 255);
+}
+
+.cc-paragram-color6 {
+  color: white;
+  font-size: 16px;
+}
+
+.cc-paragram-color7 {
+  font-size: 22px;
+  text-align: center;
+  color: rgb(85, 157, 179)
+}
+
+.cc-title-color2 {
+  color: rgb(18, 18, 88);
+  text-shadow: 1px 1px rgb(117, 119, 230);
+}
+
+#cc-background-footer-1 {
+  background-color: #030124bd;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#cc-background-footer-2 {
+  background-color: #0b243bd0;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:invalid {
+  color: white;
+}
+
+#cc-icon-redonda {
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  text-align: center;
+  padding: 1px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.caja-convertidor {
+  text-align: center;
+  color: #020f36;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.form-control,
+.is-focused .form-control {
+  background-image: linear-gradient(0, #020f36 2px, rgba(255, 255, 255, 0)0), linear-gradient(0, #020f36 1px, rgba(255, 255, 255, 0)0);
+}
+
+.form-control {
+  background-color: transparent;
+  background-size: 0 100%, 100% 100%;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+  padding: 0;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-azul-oscuro,
+.btn-azul-oscuro:not(:disabled) :not(.disabled) .active,
+.btn-azul-oscuro:not(:disabled):not(.disabled):active,
+.show>.btn-azul-oscuro.dropdown-toggle {
+  color: #FFF;
+  width: 90%;
+  background-color: #020f36;
+  border-color: #020f36;
+}
+
+.btn-azul-oscuro-2,
+.btn-azul-oscuro-2:not(:disabled) :not(.disabled) .active,
+.btn-azul-oscuro-2:not(:disabled):not(.disabled):active,
+.show>.btn-azul-oscuro-2.dropdown-toggle {
+  color: #FFF;
+  width: 48%;
+  background-color: #020f36;
+  border-color: #020f36;
+}
+
+.caja-indicadores {
+  background-color: #ecf3f6;
+  padding: 5% 7%;
+}
+
+.caja-indicadores .primera {
+  background-color: #fff;
+  color: #020f36;
+}
+
+.caja-indicadores ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.caja-indicadores ul .n-indicador {
+  font-size: 1rem;
+  padding: 5px 10px 0;
+  text-transform: capitalize;
+}
+
+.caja-indicadores ul li {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.caja-indicadores ul .precio {
+  font-size: 1.2rem;
+  padding: 0 0 10px 0;
+}
+
+.caja-indicadores .segunda {
+  color: #020f36;
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+.caja-indicadores ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fa {
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.separador {
+  width: 100%;
+  float: left;
+  margin: 8px 0;
+}

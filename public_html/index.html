@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco HardCurrency</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="person.html">Persona</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cambio_moneda.html">Cambio de Moneda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="atencion_usuario.html">Atención Cliente</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="datos_almacenar.html">Mostrar Datos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="datos_guardar.html">Guardar Datos</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row no-gutters">
+        <div class="col">
+            <div class="cc-header">
+                <div class="cc-logo">
+                    <div class="col">
+                        <img class="img_logo" src="./Imagenes/logo_HC.png"/>
+                    </div>
+                    <div class="col">
+                        Banco HardCurrency
+                    </div>
+                    <div class="col">
+                        Nit: 8958756584-5
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row cc-img-inicio-count">
+            <div class="col-md-6">
+                <div class="cc-margin-text-list">
+                    <h1 class="cc-paragram-color4">Tenemos Creditos de Libre Inversion</h1>
+                    <p class="cc-paragram-color3">Con Tasas desde 1,4</p>
+                    <p class="cc-paragram-color3">De 6 a 72 meses de plazo</p>
+                        <a href="creditos.html" class="btn btn-primary btn-lg">VER MAS</a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row cc-img-inicio-count1">
+            <div class="col-md-6">
+                <div class="cc-margin-text-list">
+                    <h1 class="cc-paragram-color4">Credito para Cartera Ordinaria</h1>
+                    <p class="cc-paragram-color3">Con plazo de hasta 36 meses</p>
+                        <a href="productos_financiacion.html" class="btn btn-primary btn-lg">VER MAS</a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        
+    </div>
+    <div class="row no-gutters">
+        <div id="cc-background-footer-1" class="col">
+                <div class="col-md-8 cc-paragram-title cc-paragram-color1">
+                    Banco HardCurrency de tu confianza
+                </div>
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-facebook"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-twitter"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-youtube"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-instagram"></div></a>
+                        </li>
+                        <li class="nav-item" id="cc-icon-redonda">
+                            <a href="#"><div class="fa fa-linkedin"></div></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div id="cc-background-footer-2" class="row no-gutters cc-container-perfil">
+        
+        <div class="col-md-6 d-flex justify-content-center">
+            <div>
+                <span class="cc-paragram-title">Información Corporativa</span>
+                <ul class="navbar-nav d-flex justify-content-center .cc-paragram-color1">
+                    <li class="nav-link .cc-paragram-color1">
+                        <a class="nav-link .cc-paragram-color1" href="acerca_nosotros.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_info_svg.svg"/>
+                            &nbsp Acerca de nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link .cc-paragram-color1" href="tasas_precios_comisiones.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_bank.svg"/>
+                            &nbsp Tasas, precios y comisiones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=".cc-paragram-color1" href="info_adicional.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_book.svg"/>
+                            &nbsp Información adicional
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <div>
+                <span class="cc-paragram-title">Información de Interés</span>
+                <ul class="navbar-nav d-flex justify-content-center .cc-paragram-color1">
+                    <li class=".cc-paragram-color2 nav-item">
+                        <a class="nav-link" href="info_legal.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_info_svg.svg"/>
+                            &nbsp Información legal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=".cc-paragram-color2 nav-link" href="superintendencia_financiera.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_bank.svg"/>
+                            &nbsp Superintendencia Financiera de Colombia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=".cc-paragram-color1" href="preguntas_frecuentes.html">
+                            <img id="img_icono_footer" src="./Imagenes/icono_book.svg"/>
+                            &nbsp Preguntas Frecuentes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div id="cc-background-footer-1" class="col-md-12">
+            <p class="cc-paragram-color1 col-md-8">
+                Copyright © 2018 Banco HardCurrency
+            </p>
+            <a href="tratamiento_dato.html" class="cc-paragram-color1 col-md-4">
+                Politica de Datos Personales
+            </a>
+        </div>
+    </div>
+    <script src="./js/javaScript.js"> </script>
+</body>
+
+</html>
