@@ -15,7 +15,6 @@ var btn_update              = document.getElementById('btn_update');
 var btn_delete              = document.getElementById('btn_delete');
 var clientSelect;
 var clientServer;
-
 //Metodo que crea los clientes
 //Retorna: cadena creada para cada cliente
 function Client(Cedula, Nombre, Direccion, TipoID, Tipo, Correo, Celular, AhorroID, Ahorro, CuentaID, Cuenta, TarjetasC, TarjetasD){
@@ -32,21 +31,6 @@ function Client(Cedula, Nombre, Direccion, TipoID, Tipo, Correo, Celular, Ahorro
     this.CuentaID  = CuentaID;
     this.TarjetasC = TarjetasC;
     this.TarjetasD = TarjetasD;
-    
-    //Metodo que crea la cadena para cada cliente
-    this.listClientes = function(){
-       //return this.id + " " + this.name + " " + this.type;
-       var cadena = "";
-       for (value in this){
-         if(typeof this[value] != "function"){
-            if(this[value] == id || this[value] == name || this[value] == type){
-                cadena = cadena + " "+ this[value];
-            }
-         }
-       }
-      
-      return cadena;
-    }
   }
 function ClientServer(id, name, mail, addres, phone, typeID, accountStID, savingsD){
     this.id          = id;
@@ -58,26 +42,14 @@ function ClientServer(id, name, mail, addres, phone, typeID, accountStID, saving
     this.accountStID = accountStID;
     this.savingsD    = savingsD;
 }
-
-var client1 = new Client("1091654098", "Manuel Cardenas", "Calle 145 # 45-62", "Persona Natural", "manuel.c@gmail.com", "3015884526")
-var client2 = new Client("8958756584-8", "Inmoviliaria de las casas", "Calle 45 # 45-62", "Empresa", "inmoviliariaCasas@inmoCasas.com", "3459655")
-var client3 = new Client("1191654098", "Jose Torres", "Calle 160 # 62-62", "Persona Natural", "jose.torres@gmail.com", "3012451666")
-var client4 = new Client("1120548975", "Joel Gonzales", "Carrera 49 # 129-22", "Persona Natural", "Joel.Gonzales@gmail.com", "3205884526")
-var client5 = new Client("1091654098-2", "Software & Soluciones", "Carrera 7 # 26-62", "Empresa", "S.Soluciones@ss.com", "4562514")
-
-//Inicialización de la lista de clientes
-var list = [client1, client2, client3, client4, client5];
-
 //escuchadores de los botones.
 btn_search.addEventListener('click', methodPaintClient);
 btn_update.addEventListener('click', methodUpdateClient);
 btn_delete.addEventListener('click', methodDeleteClient);
-
 //Metodo que escucha el form 
-//Parametro: rRecibe un evento
+//Parametro: rRecibe un evento, escuchamos el formulario
 var list_default = function (event) {
     event.preventDefault();
-    
 }
 //Metodo que pinta el cliente, verificando la existencia del mismo
 function methodPaintClient(){
@@ -154,7 +126,7 @@ function methodDeleteClient(){
     if(clientSelect == null || clientSelect.Cedula == null || clientSelect.Cedula == ""){
         alert("No ha seleccionado ningun Cliente");
     } else {
-        deleteClientForId("1191654044"/**clientSelect.Cedula*/);
+        deleteClientForId(clientSelect.Cedula);
         methodEmptyInput();
     }
 }
@@ -169,6 +141,7 @@ function methodEmptyInput(){
     input_phone.value           = "";
     clientSelect = null;
 }
+//get (Obtener) Client server
 function getClientForId(idClient){
     $.ajax({
         url: "http://localhost:3000/client/" + idClient,
@@ -185,6 +158,7 @@ function getClientForId(idClient){
         }
       });
 }
+//put (Actualizar) Client server
 function putClient(Client){
     var data1 = JSON.stringify(Client);
     $.ajax({
@@ -202,25 +176,7 @@ function putClient(Client){
         }
       });
 }
-function postClient(Client){
-    var data1 = JSON.stringify(Client);
-    debugger;
-    $.ajax({
-        data: data1,
-        dataType: "json",
-        contentType: "application/json",
-        url: "http://localhost:3000/client/",
-        method : 'POST',
-        success: function( result ) {
-            console.log(result);
-            alert("La información relacionada del usuario. Fue Insertada");
-            getClientForId(result[0].Cedula);
-        },
-        error: function() {
-            console.log("No se ha podido insertar la información");
-        }
-      });
-}
+//delete (Borrar) client server
 function deleteClientForId(idClient){
     $.ajax({
         url: "http://localhost:3000/client/" + idClient,

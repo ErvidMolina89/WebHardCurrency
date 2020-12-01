@@ -10,7 +10,6 @@ var select_tarj_cc          = document.getElementById('tarjet_debit');
 var select_status           = document.getElementById('status');
 var btn_save                = document.getElementById('btn_save');
 var clientServer;
-
 //Metodo que crea los clientes
 function ClientServer(id, name, mail, addres, phone, typeID, accountStID, savingsD){
     this.id          = id;
@@ -22,34 +21,29 @@ function ClientServer(id, name, mail, addres, phone, typeID, accountStID, saving
     this.accountStID = accountStID;
     this.savingsD    = savingsD;
 }
-
-//Metodo que crea los clientes
+//Metodo que crea los clientesCard
 function ClientCard(idClient, idCard){
     this.idClient = idClient;
     this.idCard   = idCard; 
 }
-
 //escuchadores de los botones.
 btn_save.addEventListener('click', methodSaveClient);
-
 //Metodo que escucha el form 
 //Parametro: rRecibe un evento
 var list_default = function (event) {
     event.preventDefault();
     
 }
-//Metodo que pinta el cliente, verificando la existencia del mismo
+//Metodo que verificando la existencia de los campos obligatorios
 function methodSaveClient(){
     if(input_ident.value != "" && input_name.value != "" && input_email.value != "" && input_phone.value != ""){
         methodValidateFields();
-        /**
-        
-            postClient(clientServer);*/
     } else {
         // Mostramos mensaje de campo Vacio
         alert("Ingresa los valores obligatorios");
     }
 }
+//Metodo que captura los valores de los campos y llama al post
 function methodValidateFields() {
     clientServer = new ClientServer(
         input_ident.value,
@@ -62,16 +56,8 @@ function methodValidateFields() {
         8);
         postClient(clientServer)
 }
-// Metodo que limpia los input
-function methodEmptyInput(){
-    input_identification.value  = "";
-    input_name.value            = "";
-    input_address.value         = "";
-    input_type.value            = "";
-    input_email.value           = "";
-    input_phone.value           = "";
-    clientSelect = null;
-}
+//Metodo de que conecta con el api rest Con Ajax y Respuesta del Api
+//Envia un objeto cliente en formato JSON
 function postClient(Client){
     var data1 = JSON.stringify(Client);
     $.ajax({
@@ -103,7 +89,8 @@ function postClient(Client){
         }
       });
 }
-
+//Metodo de que conecta con el api rest Con Ajax y Respuesta del Api
+//Envia un objeto clienteCard en formato JSON
 function tarjetClient(cardClient){
     var data2 = JSON.stringify(cardClient);
     $.ajax({

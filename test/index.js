@@ -4,11 +4,11 @@ const cors = require("cors");
 // Load the MySQL pool connection
 const pool = require("./data/config");
 var bodyParser = require('body-parser');
-//var jsonParser = bodyParser.json();
+//Uso de aplicación
 app.use(cors());
 app.use(bodyParser.json());
-//app.options('*', cors());
 
+//App obtener data
 app.get('/client/:clientId', function (req, res) {
   if (!req.params) {
     respuesta = {
@@ -25,6 +25,7 @@ app.get('/client/:clientId', function (req, res) {
   });
 });
 
+//App Envio de Data Insert Client
 app.post('/client', (request, response) => {
   pool.query('INSERT INTO client SET ?', request.body, (error, result) => {
       if (error) throw error;
@@ -32,6 +33,7 @@ app.post('/client', (request, response) => {
   });
 });
 
+//App Envio de Data Insert ClientCard
 app.post('/newClient', (request, response) => {
   pool.query('INSERT INTO clientcard SET ?', request.body, (error, result) => {
       if (error) throw error;
@@ -39,6 +41,7 @@ app.post('/newClient', (request, response) => {
   });
 });
 
+//App Envio de Data Actualizar Client
 app.put('/client/:id', (request, response) => {
   const id = request.params.id;
   pool.query('UPDATE client SET  ? WHERE id = ?', [request.body, id], (error, result) => {
@@ -47,6 +50,7 @@ app.put('/client/:id', (request, response) => {
   });
 });
 
+//App Envio de Data delete Client
 app.delete('/client/:id', (request, response) => {
   const id = request.params.id;
   
@@ -57,6 +61,7 @@ app.delete('/client/:id', (request, response) => {
   });
 });
 
+// Inicializar Servidor
 app.listen(3000, () => {
   console.log("El servidor está inicializado en el puerto 3000");
 });
