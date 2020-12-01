@@ -49,6 +49,7 @@ app.put('/client/:id', (request, response) => {
 
 app.delete('/client/:id', (request, response) => {
   const id = request.params.id;
+  
   pool.query('DELETE FROM client WHERE id = ?', id, (error, result) => {
       if (error) throw error;
 
